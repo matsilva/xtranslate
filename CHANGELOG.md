@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.2] - 2025-03-12
+
+* chore: rename pkg
+* chore: add pr publish cmd
+* chore: release v0.1.1
+
 ## [0.1.1] - 2025-03-12
 
 * chore: add npm install to xrelease
