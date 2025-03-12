@@ -5,9 +5,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'x-translate',
+      name: 'xtranslate',
       formats: ['es', 'umd'],
-      fileName: (format) => `x-translate.${format}.js`,
+      fileName: (format) => `xtranslate.${format}.js`,
     },
     rollupOptions: {
       external: ['react'],

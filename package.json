@@ -40,6 +40,8 @@
   },
   "description": "Simple client side cross framework translation lib",
   "main": "dist/xtranslate.es.js",
+  "module": "dist/xtranslate.es.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matsilva/xtranslate.git"
