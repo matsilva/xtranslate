@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run clean && vite build && tsc -d src/index.ts --declarationDir dist --declarationMap --emitDeclarationOnly --excludeDirectories 'node_modules/**','dist/**'",
+    "build": "npm run clean && vite build && tsc --project tsconfig.json",
     "clean": "rm -rf dist",
     "preview": "vite preview",
     "prepublishOnly": "git pull && npm run build",
