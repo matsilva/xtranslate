@@ -1,5 +1,5 @@
 {
-  "name": "xtranslate",
+  "name": "x-translate",
   "private": false,
   "version": "0.1.0",
   "type": "module",
@@ -14,8 +14,10 @@
     "build:prod": "npm run clean && tsc && vite build --mode production",
     "clean": "rm -rf dist",
     "preview": "vite preview",
-    "test": "vitest",
-    "test:ci": "vitest run"
+    "format": "npx -y prettier . --write",
+    "test": "vitest run",
+    "test:ci": "vitest run",
+    "prepare": "husky"
   },
   "dependencies": {
     "i18next": "^21.0.2",
@@ -23,10 +25,17 @@
     "i18next-xhr-backend": "^3.2.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "jsdom": "^26.0.0",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
     "vitest": "^3.0.8"
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier --write --ignore-unknown"
+    ]
   },
   "description": "Simple client side cross framework translation lib",
   "main": "dist/x-translate.es.js",

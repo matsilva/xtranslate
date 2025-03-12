@@ -1,0 +1,33 @@
+version: 1
+release:
+  # Branch configuration
+  branch: main
+
+  # Version bump type
+  defaultBump: patch
+
+  # Version file updates
+  version:
+    files:
+      - path: 'package.json'
+        pattern: "\"version\":\\s*\"(?<version>[^\"]+)\""
+        template: '"version": "${version}"'
+
+  # Changelog configuration
+  changelog:
+    enabled: true
+    template: conventional
+
+  # Pre-release checks
+  checks:
+    - type: build
+      command: 'npm run build:prod'
+
+  # Release actions actions
+  actions:
+    - type: git-tag
+    - type: commit-push
+    - type: github-release
+      assets:
+        - 'dist/x-translate.es.js'
+        - 'dist/x-translate.umd.js'
