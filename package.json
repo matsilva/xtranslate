@@ -29,6 +29,7 @@
     "@commitlint/config-conventional": "^19.8.0",
     "jsdom": "^26.0.0",
     "typescript": "~5.7.2",
+    "husky": "^9.1.7",
     "vite": "^6.2.0",
     "vitest": "^3.0.8"
   },
