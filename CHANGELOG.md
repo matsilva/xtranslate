@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.5] - 2025-03-12
+
+* fix: type export in packagejson
+* chore: release v0.1.4
+
 ## [0.1.4] - 2025-03-12
 
 * fix: output name
