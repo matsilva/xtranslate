@@ -24,7 +24,7 @@ release:
       command: 'npm install'
 
     - type: build
-      command: 'npm run build:prod'
+      command: 'npm run build'
 
   # Release actions actions
   actions:

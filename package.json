@@ -10,8 +10,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run clean && tsc && vite build",
-    "build:prod": "npm run clean && tsc && vite build --mode production",
+    "build": "npm run clean && vite build && tsc -d src/index.ts --declarationDir dist --declarationMap --emitDeclarationOnly --excludeDirectories 'node_modules/**','dist/**'",
     "clean": "rm -rf dist",
     "preview": "vite preview",
     "prepublishOnly": "git pull && npm run build",
