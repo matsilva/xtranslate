@@ -20,6 +20,9 @@ release:
 
   # Pre-release checks
   checks:
+    - type: install
+      command: 'npm install'
+
     - type: build
       command: 'npm run build:prod'
 
