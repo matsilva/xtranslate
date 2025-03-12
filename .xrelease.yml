@@ -32,5 +32,5 @@ release:
     - type: commit-push
     - type: github-release
       assets:
-        - 'dist/x-translate.es.js'
-        - 'dist/x-translate.umd.js'
+        - 'dist/xtranslate.es.js'
+        - 'dist/xtranslate.umd.js'

@@ -1,12 +1,12 @@
 {
-  "name": "x-translate",
+  "name": "@matsilva/xtranslate",
   "private": false,
   "version": "0.1.1",
   "type": "module",
   "exports": {
-    ".": "./dist/x-translate.es.js",
-    "./import": "./dist/x-translate.es.js",
-    "./require": "./dist/x-translate.umd.js"
+    ".": "./dist/xtranslate.es.js",
+    "./import": "./dist/xtranslate.es.js",
+    "./require": "./dist/xtranslate.umd.js"
   },
   "scripts": {
     "dev": "vite",
@@ -40,7 +40,7 @@
     ]
   },
   "description": "Simple client side cross framework translation lib",
-  "main": "dist/x-translate.es.js",
+  "main": "dist/xtranslate.es.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matsilva/xtranslate.git"
