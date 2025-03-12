@@ -1,0 +1,46 @@
+{
+  "name": "xtranslate",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./dist/x-translate.es.js",
+    "./import": "./dist/x-translate.es.js",
+    "./require": "./dist/x-translate.umd.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run clean && tsc && vite build",
+    "build:prod": "npm run clean && tsc && vite build --mode production",
+    "clean": "rm -rf dist",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ci": "vitest run"
+  },
+  "dependencies": {
+    "i18next": "^21.0.2",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-xhr-backend": "^3.2.2"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.8"
+  },
+  "description": "Simple client side cross framework translation lib",
+  "main": "dist/x-translate.es.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matsilva/xtranslate.git"
+  },
+  "keywords": [
+    "translate"
+  ],
+  "author": "Mat Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matsilva/xtranslate/issues"
+  },
+  "homepage": "https://github.com/matsilva/xtranslate#readme"
+}
