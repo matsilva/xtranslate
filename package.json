@@ -4,9 +4,12 @@
   "version": "0.1.4",
   "type": "module",
   "exports": {
-    ".": "./dist/xtranslate.es.js",
-    "./import": "./dist/xtranslate.es.js",
-    "./require": "./dist/xtranslate.umd.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/xtranslate.es.js",
+      "require": "./dist/xtranslate.umd.js",
+      "default": "./dist/xtranslate.es.js"
+    }
   },
   "scripts": {
     "dev": "vite",
