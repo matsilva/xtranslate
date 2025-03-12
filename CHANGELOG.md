@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3] - 2025-03-12
+
+* fix: declaration output
+* chore: include type definitions
+* chore: release v0.1.2
+
 ## [0.1.2] - 2025-03-12
 
 * chore: rename pkg
